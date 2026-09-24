@@ -28,7 +28,9 @@ from sherlock_api import (
 with SherlockAPIClient(sherlock_port=8080) as client:
     case = client.post_case(
         CreateCaseRequest(
-            "Bushing inspection", RobotPlatform.UNIVERSAL_ROBOTS, "0A0E012F7772596B03D92AAA544763BB"
+            "Bushing inspection",
+            RobotPlatform.UNIVERSAL_ROBOTS,
+            "0A0E012F7772596B03D92AAA544763BB",
         )
     )
     batch = client.post_batch(CreateBatchRequest(case["id"], "Batch 1"))
