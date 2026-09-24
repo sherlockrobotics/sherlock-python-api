@@ -12,9 +12,16 @@ build/
 dist/
 *.egg-info/
 
+# Local notes (not checked in)
+*.local.md
+
 # Tooling caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# IDEs and editors
+.vscode/
+.idea/
